@@ -33,7 +33,7 @@ ZIP_CODE="$1"
 NODE_NUMBER="$2"
 
 # URLs for required files
-BASE_URL="https://raw.githubusercontent.com/KD5FMU/Time-Weather-Announce/refs/heads/main/"
+BASE_URL="https://raw.githubusercontent.com/chevybowtie/ASL3-Time-Weather-Announce/refs/heads/main/"
 SAYTIME_URL="${BASE_URL}saytime.pl"
 WEATHER_URL="${BASE_URL}weather.sh"
 INI_URL="${BASE_URL}weather.ini"
@@ -47,7 +47,7 @@ ZIP_FILE="${SOUNDS_DIR}/sound_files.zip"
 
 # Ensure necessary tools are installed
 echo "Installing required packages..."
-apt install -y bc zip plocate || {
+apt install -y bc zip || {
     echo "Failed to install packages. Ensure you have an active internet connection."
     exit 1
 }
@@ -130,12 +130,5 @@ if [ "$dir_count" -gt 2 ]; then
   echo "mkdir -p $dir_to_check/{en,custom}"
   echo "chown asterisk:asterisk -R $dir_to_check/*"
 fi
-
-# Update plocate database
-echo "Updating plocate database..."
-updatedb || {
-    echo "Failed to update the plocate database."
-    exit 1
-}
 
 echo "Setup completed successfully!"
