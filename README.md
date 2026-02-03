@@ -1,4 +1,4 @@
-![HRC Logo](https://github.com/KD5FMU/Time-Weather-Announce/blob/main/TimeWeather2.png)
+![HRC Logo](https://github.com/chevybowtie/ASL3-Time-Weather-Announce/blob/main/TimeWeather2.png)
 
 # Time and Weather Conditions Announcement
 This script file will install the needed files and scripts to initiate the Top of the Hour Time and Weather Condition Announcement moved over from HamVoIP AllStar Software. Here is how you install it.
@@ -12,7 +12,7 @@ cd
 
 Then Download this file
 ```
-sudo wget https://raw.githubusercontent.com/KD5FMU/Time-Weather-Announce/refs/heads/main/time_weather.sh
+sudo wget https://raw.githubusercontent.com/chevybowtie/ASL3-Time-Weather-Announce/refs/heads/main/time_weather.sh
 ```
 and then make it executable.
 
